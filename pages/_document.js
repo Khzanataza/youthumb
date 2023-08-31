@@ -28,7 +28,7 @@ class MyDocument extends Document {
         <body>
           <Main />
               <div>
-           <h1> # YouTube Thumbnail Download Service: Get High-Quality YT Video Thumbnails<h1>
+            # YouTube Thumbnail Download Service: Get High-Quality YT Video Thumbnails
 
 Looking for a reliable YouTube Thumbnail Downloader? Look no further! Our platform provides you with the ability to effortlessly save thumbnail images from any YouTube video in multiple resolutions: Full HD (1080p), HD (720p), SD, and even a compact size. Our supported formats encompass a wide range, including YouTube videos in HD, HQ, 1080p, and 4K.
 
