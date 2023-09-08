@@ -30,11 +30,7 @@ class MyDocument extends Document {
         </Head>
         <body>
           <Main />
-<<<<<<< HEAD
           {/* Contenido optimizado */}
-=======
-            {/* Contenido optimizado */}
->>>>>>> f1148f71bb3b5c582e45fe5ac623d016b0416da4
           <div>
             <h1>YouTube Thumbnail Download Service: Get High-Quality YT Video Thumbnails</h1>
             <p>Looking for a reliable YouTube Thumbnail Downloader? Look no further! Our platform provides you with the ability to effortlessly save thumbnail images from any YouTube video in multiple resolutions: Full HD (1080p), HD (720p), SD, and even a compact size. Our supported formats encompass a wide range, including YouTube videos in HD, HQ, 1080p, and 4K.</p>
@@ -47,10 +43,6 @@ class MyDocument extends Document {
             <p>Visit <a href="www.youtubethumbnaildownload4k.com">www.youtubethumbnaildownload4k.com</a> - Copyright 2023</p>
           </div>
           {/* Fin del contenido optimizado */}
-<<<<<<< HEAD
-=======
-
->>>>>>> f1148f71bb3b5c582e45fe5ac623d016b0416da4
           <NextScript />
         </body>
       </Html>
