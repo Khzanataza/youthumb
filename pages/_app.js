@@ -21,12 +21,12 @@ function MyApp({ Component, pageProps }) {
         <ul>
           <li>
             <Link href="/">
-              <a>Home</a>
+              Home
             </Link>
           </li>
           <li>
             <Link href="/about">
-              <a>About Us</a>
+              About Us
             </Link>
           </li>
           {/* Agrega más enlaces si es necesario */}
