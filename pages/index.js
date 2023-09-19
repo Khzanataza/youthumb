@@ -1,7 +1,7 @@
 // index.js
 import { useState } from "react";
 import copy from "copy-to-clipboard";
-import './App.css';
+import './index.css'; // Cambia la importación al nombre correcto del archivo CSS
 
 const Index = () => {
   const [videoURL, setVideoURL] = useState("");
