@@ -1,5 +1,6 @@
 import { useState } from "react";
 import copy from "copy-to-clipboard";
+import '../styles/index.css'; // Asegúrate de que la ruta de importación sea correcta
 
 const Index = () => {
   const [videoURL, setVideoURL] = useState("");
@@ -35,39 +36,47 @@ const Index = () => {
 
   return (
     <div className="container">
-      <header className="text-center mb-8">
-        <h1 className="text-title">Youtube Thumbnail Downloader</h1>
-        <p className="text-description">
-          Download high-quality thumbnails from YouTube videos.
-        </p>
-      </header>
-      <div className="text-center">
-        <input
-          type="text"
-          className="input"
-          placeholder="Enter YouTube URL"
-          value={videoURL}
-          onChange={(e) => setVideoURL(e.target.value)}
-        />
-        <button className="btn" onClick={() => getYouTubeThumbnail(videoURL)}>
-          Download Thumbnails
-        </button>
+      <div className="banner">
+        {/* Aquí puedes colocar tu banner de 160x600 */}
       </div>
-      {thumbnailOptions.length > 0 && (
-        <div className="thumbnail-options">
-          <h2 className="text-subtitle">Thumbnail Options</h2>
-          <div className="grid">
-            {thumbnailOptions.map((option, index) => (
-              <div key={index} className="thumbnail-option">
-                <img src={option.url} alt={`Thumbnail ${index + 1}`} />
-                <button className="btn" onClick={() => copy(option.url)}>
-                  Copy Image URL
-                </button>
-              </div>
-            ))}
-          </div>
+      <div className="content">
+        <header className="text-center mb-8">
+          <h1 className="text-title">Youtube Thumbnail Downloader</h1>
+          <p className="text-description">
+            Download high-quality thumbnails from YouTube videos.
+          </p>
+        </header>
+        <div className="text-center">
+          <input
+            type="text"
+            className="input"
+            placeholder="Enter YouTube URL"
+            value={videoURL}
+            onChange={(e) => setVideoURL(e.target.value)}
+          />
+          <button className="btn" onClick={() => getYouTubeThumbnail(videoURL)}>
+            Download Thumbnails
+          </button>
         </div>
-      )}
+        {thumbnailOptions.length > 0 && (
+          <div className="thumbnail-options">
+            <h2 className="text-subtitle">Thumbnail Options</h2>
+            <div className="grid">
+              {thumbnailOptions.map((option, index) => (
+                <div key={index} className="thumbnail-option">
+                  <img src={option.url} alt={`Thumbnail ${index + 1}`} />
+                  <button className="btn" onClick={() => copy(option.url)}>
+                    Copy Image URL
+                  </button>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+      <div className="banner">
+        {/* Aquí puedes colocar otro banner de 160x600 */}
+      </div>
     </div>
   );
 };
