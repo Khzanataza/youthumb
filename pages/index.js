@@ -1,6 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import copy from 'copy-to-clipboard';
 
+const TopMenu = () => {
+  return (
+    <div className="top-menu">
+      <ul>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#about">Acerca de Nosotros</a></li>
+        <li><a href="#services">Servicios</a></li>
+        <li><a href="#testimonials">Testimonios</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </div>
+  );
+};
+
 
 const LeftBanner = () => {
   useEffect(() => {
