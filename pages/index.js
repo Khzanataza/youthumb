@@ -1,6 +1,5 @@
 import { useState } from "react";
 import copy from "copy-to-clipboard";
-import '../styles/index.css'; // Asegúrate de que la ruta de importación sea correcta
 
 const Index = () => {
   const [videoURL, setVideoURL] = useState("");
