@@ -1,7 +1,7 @@
-// index.js
+// pages/index.js
 import { useState } from "react";
 import copy from "copy-to-clipboard";
-import './index.css'; // Cambia la importación al nombre correcto del archivo CSS
+import styles from '../styles/index.module.css'; // Asegúrate de que la ruta de importación sea correcta
 
 const Index = () => {
   const [videoURL, setVideoURL] = useState("");
@@ -36,33 +36,33 @@ const Index = () => {
   };
 
   return (
-    <div className="container">
-      <header className="text-center mb-8">
-        <h1 className="text-title">Youtube Thumbnail Downloader</h1>
-        <p className="text-description">
+    <div className={styles.container}>
+      <header className={`${styles.text} ${styles.mb8}`}>
+        <h1 className={styles.textTitle}>Youtube Thumbnail Downloader</h1>
+        <p className={styles.textDescription}>
           Download high-quality thumbnails from YouTube videos.
         </p>
       </header>
-      <div className="text-center">
+      <div className={styles.textCenter}>
         <input
           type="text"
-          className="input"
+          className={styles.input}
           placeholder="Enter YouTube URL"
           value={videoURL}
           onChange={(e) => setVideoURL(e.target.value)}
         />
-        <button className="btn" onClick={() => getYouTubeThumbnail(videoURL)}>
+        <button className={styles.btn} onClick={() => getYouTubeThumbnail(videoURL)}>
           Download Thumbnails
         </button>
       </div>
       {thumbnailOptions.length > 0 && (
-        <div className="thumbnail-options">
-          <h2 className="text-subtitle">Thumbnail Options</h2>
-          <div className="grid">
+        <div className={styles.thumbnailOptions}>
+          <h2 className={styles.textSubtitle}>Thumbnail Options</h2>
+          <div className={styles.grid}>
             {thumbnailOptions.map((option, index) => (
-              <div key={index} className="thumbnail-option">
+              <div key={index} className={styles.thumbnailOption}>
                 <img src={option.url} alt={`Thumbnail ${index + 1}`} />
-                <button className="btn" onClick={() => copy(option.url)}>
+                <button className={styles.btn} onClick={() => copy(option.url)}>
                   Copy Image URL
                 </button>
               </div>
