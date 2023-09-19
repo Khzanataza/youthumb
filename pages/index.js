@@ -15,7 +15,6 @@ const TopMenu = () => {
   );
 };
 
-
 const LeftBanner = () => {
   useEffect(() => {
     if (typeof window !== 'undefined') {
@@ -75,11 +74,11 @@ const Index = () => {
   const getYouTubeThumbnail = (url) => {
     let regExp = /.*(?:youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=)([^#\&\?]*).*/;
     let match = url.match(regExp);
-  
+
     if (match && match[1].length === 11) {
       const videoURL = match[1];
       const thumbnailBaseUrl = "http://img.youtube.com/vi/";
-  
+
       const options = [
         { resolution: "HD (1280x720)", code: "maxresdefault" },
         { resolution: "SD (640x480)", code: "sddefault" },
@@ -87,25 +86,28 @@ const Index = () => {
         { resolution: "Medium (320x180)", code: "mqdefault" },
         { resolution: "Low (120x90)", code: "default" },
       ];
-  
+
       const thumbnailOptions = options.map((option) => ({
         resolution: option.resolution,
         url: `${thumbnailBaseUrl}${videoURL}/${option.code}.jpg`,
       }));
-  
+
       setThumbnailOptions(thumbnailOptions);
     } else {
       // Si no se encuentra una URL de video válida, no elimines las miniaturas existentes
       // en lugar de eso, simplemente devuelve sin cambiar el estado.
       return;
     }
-    
+
     // Limpiar la URL del video después de agregar miniaturas
     setVideoURL("");
   };
 
   return (
     <div className="container mx-auto px-4 py-8">
+      {/* Agrega el menú en la parte superior */}
+      <TopMenu />
+
       {/* Coloca el banner de la izquierda */}
       <LeftBanner />
 
