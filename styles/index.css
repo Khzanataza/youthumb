@@ -1,7 +1,7 @@
 /* Set the base font and background color for the entire app */
 body {
-  font-family: 'Lato', sans-serif; /* Cambiamos la fuente a Lato */
-  background-color: #e6e6e6; /* Cambiamos el color de fondo a #e6e6e6 */
+  font-family: 'Lato', sans-serif;
+  background-color: #e6e6e6;
 }
 
 /* Center align the content in the container */
@@ -15,63 +15,71 @@ body {
 
 /* Style the input and button for the YouTube URL */
 input[type="text"] {
-  padding: 10px; /* Aumentamos el espacio interno */
-  border: 1px solid #ccc;
-  border-radius: 5px; /* Redondeamos los bordes */
+  padding: 12px; /* Cambiamos el espacio interno */
+  border: 1px solid #fff; /* Cambiamos el color del borde */
+  border-radius: 4px; /* Redondeamos los bordes */
   width: 100%;
-  font-size: 16px; /* Cambiamos el tamaño de la fuente */
-  margin-bottom: 10px; /* Añadimos un espacio inferior */
+  font-size: 14px; /* Cambiamos el tamaño de la fuente */
+  margin-bottom: 12px; /* Añadimos un espacio inferior */
 }
 
 /* Style the "Download Thumbnails" button */
 .btn-blue {
-  background-color: #3498db;
-  color: white;
-  font-weight: 700; /* Cambiamos el peso de la fuente a 700 */
-  padding: 12px 24px; /* Aumentamos el espacio interno */
-  border-radius: 5px;
+  background-color: red; /* Cambiamos el color de fondo */
+  color: #fff; /* Cambiamos el color del texto */
+  font-weight: 500; /* Cambiamos el peso de la fuente */
+  padding: 10px 25px; /* Cambiamos el espacio interno */
+  border: 1px solid #333; /* Cambiamos el color del borde */
+  border-radius: 2px; /* Redondeamos los bordes */
   cursor: pointer;
-  transition: background-color 0.2s;
-  font-size: 18px; /* Cambiamos el tamaño de la fuente */
+  transition: background-color 0.4s, color 0.4s; /* Cambiamos la duración de la transición */
+  font-size: 0.9em; /* Cambiamos el tamaño de la fuente */
+  text-indent: 15px;
 }
 
 .btn-blue:hover {
-  background-color: #2680c5;
+  background-color: #333; /* Cambiamos el color de fondo al hacer hover */
+  border-color: red; /* Cambiamos el color del borde al hacer hover */
+  color: red; /* Cambiamos el color del texto al hacer hover */
 }
 
 /* Style the thumbnail options */
 .thumbnail-option {
-  background-color: white;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  padding: 20px; /* Aumentamos el espacio interno */
+  background-color: #333; /* Cambiamos el color de fondo */
+  border: 1px solid #fff; /* Cambiamos el color del borde */
+  border-radius: 4px; /* Redondeamos los bordes */
+  padding: 36px 18px; /* Cambiamos el espacio interno */
   text-align: center;
-  transition: box-shadow 0.2s;
-  margin-bottom: 20px; /* Añadimos un espacio inferior */
+  transition: box-shadow 0.2s; /* Cambiamos la duración de la transición */
+  margin-bottom: 24px; /* Añadimos un espacio inferior */
 }
 
 .thumbnail-option:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hacemos que la sombra sea más visible */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Cambiamos la sombra al hacer hover */
 }
 
 /* Style the images within thumbnail options */
 .thumbnail-option img {
-  max-width: 100%;
+  max-width: 95%; /* Cambiamos el ancho máximo */
   height: auto;
 }
 
 /* Style the "Copy Image URL" button */
 .thumbnail-option button {
-  background-color: #3498db;
-  color: white;
-  font-weight: 700; /* Cambiamos el peso de la fuente a 700 */
-  padding: 8px 16px; /* Aumentamos el espacio interno */
-  border-radius: 5px;
+  background-color: red; /* Cambiamos el color de fondo */
+  color: #fff; /* Cambiamos el color del texto */
+  font-weight: 500; /* Cambiamos el peso de la fuente */
+  padding: 4px 24px; /* Cambiamos el espacio interno */
+  border: 1px solid #333; /* Cambiamos el color del borde */
+  border-radius: 2px; /* Redondeamos los bordes */
   cursor: pointer;
-  transition: background-color 0.2s;
-  font-size: 16px; /* Cambiamos el tamaño de la fuente */
+  transition: background-color 0.4s, color 0.4s; /* Cambiamos la duración de la transición */
+  font-size: 15px; /* Cambiamos el tamaño de la fuente */
+  white-space: nowrap;
 }
 
 .thumbnail-option button:hover {
-  background-color: #2680c5;
+  background-color: #333; /* Cambiamos el color de fondo al hacer hover */
+  border-color: red; /* Cambiamos el color del borde al hacer hover */
+  color: red; /* Cambiamos el color del texto al hacer hover */
 }
