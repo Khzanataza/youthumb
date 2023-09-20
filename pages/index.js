@@ -3,17 +3,23 @@ import copy from 'copy-to-clipboard';
 
 const TopMenu = () => {
   return (
-    <div className="top-menu">
-      <ul>
-        <li><a href="#home">Inicio</a></li>
-        <li><a href="#about">Acerca de Nosotros</a></li>
-        <li><a href="#services">Servicios</a></li>
-        <li><a href="#testimonials">Testimonios</a></li>
-        <li><a href="#contact">Contacto</a></li>
-      </ul>
-    </div>
+    <header className="site-header">
+      <div className="site-identity">
+        <p>YouTube Thumbnails</p>
+      </div>
+      <nav className="site-navigation">
+        <ul className="nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About US</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
   );
 };
+
+
+
 
 const LeftBanner = () => {
   useEffect(() => {
