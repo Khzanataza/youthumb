@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import copy from 'copy-to-clipboard';
+import Link from 'next/link';
 
 const TopMenu = () => {
   return (
