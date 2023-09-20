@@ -114,7 +114,7 @@ const Index = () => {
       {/* Coloca el texto entre los banners */}
       <div className="text-center mb-8" style={{ width: "60%" }}>
         <h1 className="text-3xl font-bold mb-2">
-          Download High-Quality YouTube Thumbnails for Free with Our Thumbnail Downloader Tool
+          Download High-Quality YouTube Thumbnails for Free
         </h1>
         <p className="text-gray-600">
           Easily download YouTube thumbnails with our YouTube Thumbnail Downloader. Get high-quality previews of your favorite videos within seconds. Convert these thumbnails into shareable images for your social media or online projects! Try it now and swiftly obtain YouTube thumbnails with our convenient thumbnail download service.
