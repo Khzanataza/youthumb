@@ -3,21 +3,17 @@ import copy from 'copy-to-clipboard';
 
 const TopMenu = () => {
   return (
-    <header className="site-header">
-      <div className="site-identity">
-        <h1>YouTube Thumbnails</h1>
-      </div>
-      <nav className="site-navigation">
-        <ul className="nav">
-          <li><a href="#">Inicio</a></li>
-          <li><a href="#">Acerca de</a></li>
-          <li><a href="#">Servicios</a></li>
-          <li><a href="#">Contacto</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav className="site-navigation">
+      <ul className="nav">
+        <li><a href="/">Inicio</a></li>
+        <li><a href="/about">Acerca de</a></li>
+        <li><a href="/services">Servicios</a></li>
+        <li><a href="/contact">Contacto</a></li>
+      </ul>
+    </nav>
   );
 };
+
 
 
 
