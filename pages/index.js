@@ -1,18 +1,23 @@
 import React, { useState, useEffect } from 'react';
 import copy from 'copy-to-clipboard';
-import Link from 'next/link';
 
-import Link from 'next/link';
-
-function Menu() {
+const TopMenu = () => {
   return (
-    <ul className="navigation">
-      <li><Link href="/">Inicio</Link></li>
-      <li><Link href="/about">Acerca de</Link></li>
-      <li><Link href="/contact">Contacto</Link></li>
-    </ul>
+    <header className="site-header">
+      <div className="site-identity">
+        <h1>YouTube Thumbnails</h1>
+      </div>
+      <nav className="site-navigation">
+        <ul className="nav">
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#">Acerca de</a></li>
+          <li><a href="#">Servicios</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
   );
-}
+};
 
 
 
