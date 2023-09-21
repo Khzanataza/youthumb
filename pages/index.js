@@ -8,7 +8,7 @@ const TopMenu = () => {
         <li><a href="/">Inicio</a></li>
         <li><a href="/about">Acerca de</a></li>
         <li><a href="/services">Servicios</a></li>
-        <li><a href="/contact">Contacto</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
     </nav>
   );
